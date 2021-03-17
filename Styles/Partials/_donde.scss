@@ -1,0 +1,58 @@
+// comienza seccion de donde venimos
+#donde {
+  display: flex;
+  grid-area: donde;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+
+
+  h2 {
+    font-family: "IBM Plex Sans";
+    font-size: 36px;
+    color: #060a24;
+    letter-spacing: 0;
+    line-height: 42px;
+    padding-bottom: 30px;
+  }
+
+  p {
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    color: #060a24;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+
+   .img-phone {
+      width: 100%;
+  //    margin: auto;
+    }
+}
+
+@media (min-width: 600px) {
+  #donde {
+
+    .img-phone{
+      max-width: 30%;
+    }
+
+    article {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+        section {
+          padding: 50px;
+          max-width: 30%;
+      }
+
+      p{
+        font-size: 16px;
+      }  
+      h2{
+        font-size: 48px;
+      }
+    }
+  }
+}

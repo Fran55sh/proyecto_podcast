@@ -1,0 +1,60 @@
+
+#episodios {
+  position: relative;
+  height: 100%;   
+
+    h2 {
+      padding-top: 100px;
+      width: 90%;
+      margin: auto;
+      margin-bottom: 20px;
+      font-family: "IBM Plex Sans";
+      font-size: 36px;
+      color: #ffffff;
+      letter-spacing: 0;
+      line-height: 42px;
+    }
+
+    .podcasts{
+      margin: auto;
+      padding-bottom: 50px;
+      width: 90%;
+    }
+
+    iframe{
+      margin: auto;
+      padding-bottom: 40px;
+
+    }
+  
+}
+
+#episodios::after{
+  content: '';
+  position: absolute;
+  top:0;
+  width: 100vw;
+  height: 90% ;
+  clip-path: polygon(0 5%, 100% 0, 100% 93%, 0% 100%);
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  z-index: -1;
+}
+
+@media (min-width: 600px) {
+  .h2-ep{
+    padding-left:120px;
+  }
+  
+  .podcasts {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  iframe{
+    display: inline-block;
+    max-width: 40%;
+  }
+   
+}
