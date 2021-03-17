@@ -9,8 +9,13 @@ header {
 
   .logo {
     padding: 10px;
+    transition: 3s ease-in-out;
+  }
+  .logo:hover {
+    transform: rotate(360deg);
   }
 }
+
 .btn-nav {
   align-self: center;
   padding: 10px;
@@ -31,19 +36,18 @@ header {
       letter-spacing: 0;
       line-height: 28px;
 
-      &:hover{
+      &:hover {
         font-family: "IBM Plex Mono-medium", monospace;
-        color: #00F3BB;
-        }
-      &:active{
+        color: #00f3bb;
+      }
+      &:active {
         font-family: "IBM Plex Mono", monospace;
-        color: rgba(6,10,36,0.56);
+        color: rgba(6, 10, 36, 0.56);
         text-decoration: line-through;
-        }
       }
     }
   }
-
+}
 
 #toggle,
 .fa-times,

@@ -60,10 +60,14 @@ main .presentacion .btn-conoce {
   border: none;
   padding: 13px;
   margin-top: 20px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 main .presentacion .btn-conoce:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  -webkit-box-shadow: rgba(0, 110, 255, 0.842) 5px 5px, rgba(46, 130, 240, 0.87) 10px 10px, rgba(46, 211, 240, 0.815) 15px 15px, rgba(0, 232, 240, 0.794) 20px 20px, rgba(0, 240, 184, 0.76) 25px 25px;
+          box-shadow: rgba(0, 110, 255, 0.842) 5px 5px, rgba(46, 130, 240, 0.87) 10px 10px, rgba(46, 211, 240, 0.815) 15px 15px, rgba(0, 232, 240, 0.794) 20px 20px, rgba(0, 240, 184, 0.76) 25px 25px;
 }
 
 main .presentacion .txt-btn1 {
@@ -106,6 +110,13 @@ header {
 
 header .logo {
   padding: 10px;
+  -webkit-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
+}
+
+header .logo:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .btn-nav {
@@ -136,7 +147,7 @@ header .logo {
 
 .drpmenu li a:hover {
   font-family: "IBM Plex Mono-medium", monospace;
-  color: #00F3BB;
+  color: #00f3bb;
 }
 
 .drpmenu li a:active {
@@ -463,6 +474,8 @@ header .logo {
   background: #00f3bb;
   border: none;
   padding: 13px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .escuchar .btn-escucha span {
@@ -476,6 +489,8 @@ header .logo {
 
 .escuchar .btn-escucha:hover {
   background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+  -webkit-box-shadow: rgba(0, 110, 255, 0.842) 5px 5px, rgba(46, 130, 240, 0.87) 10px 10px, rgba(46, 211, 240, 0.815) 15px 15px, rgba(0, 232, 240, 0.794) 20px 20px, rgba(0, 240, 184, 0.76) 25px 25px;
+          box-shadow: rgba(0, 110, 255, 0.842) 5px 5px, rgba(46, 130, 240, 0.87) 10px 10px, rgba(46, 211, 240, 0.815) 15px 15px, rgba(0, 232, 240, 0.794) 20px 20px, rgba(0, 240, 184, 0.76) 25px 25px;
 }
 
 @media (min-width: 600px) {
