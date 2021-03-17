@@ -232,6 +232,9 @@ header .logo:hover {
 #episodios iframe {
   margin: auto;
   padding-bottom: 40px;
+  width: 100%;
+  height: 232px;
+  border: none;
 }
 
 #episodios::after {
@@ -271,6 +274,10 @@ header .logo:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: donde;
@@ -301,13 +308,14 @@ header .logo:hover {
 }
 
 @media (min-width: 600px) {
-  #donde .img-phone {
-    max-width: 30%;
-  }
-  #donde article {
+  #donde {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -315,14 +323,17 @@ header .logo:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  #donde article section {
+  #donde .img-phone {
+    max-width: 30%;
+  }
+  #donde article {
     padding: 50px;
     max-width: 30%;
   }
-  #donde article p {
+  #donde p {
     font-size: 16px;
   }
-  #donde article h2 {
+  #donde h2 {
     font-size: 48px;
   }
 }

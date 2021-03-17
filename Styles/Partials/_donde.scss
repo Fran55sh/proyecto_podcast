@@ -1,11 +1,11 @@
 // comienza seccion de donde venimos
 #donde {
   display: flex;
+  flex-direction: column;
   grid-area: donde;
   width: 90%;
   margin: auto;
   margin-bottom: 30px;
-
 
   h2 {
     font-family: "IBM Plex Sans";
@@ -24,35 +24,33 @@
     line-height: 22px;
   }
 
-   .img-phone {
-      width: 100%;
-  //    margin: auto;
-    }
+  .img-phone {
+    width: 100%;
+    //    margin: auto;
+  }
 }
 
 @media (min-width: 600px) {
   #donde {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 
-    .img-phone{
+    .img-phone {
       max-width: 30%;
     }
 
     article {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+      padding: 50px;
+      max-width: 30%;
+    }
 
-        section {
-          padding: 50px;
-          max-width: 30%;
-      }
-
-      p{
-        font-size: 16px;
-      }  
-      h2{
-        font-size: 48px;
-      }
+    p {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 48px;
     }
   }
 }
