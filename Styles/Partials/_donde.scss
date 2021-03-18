@@ -8,7 +8,7 @@
   margin-bottom: 30px;
 
   h2 {
-    font-family: "IBM Plex Sans";
+    font-family: $plexsans;
     font-size: 36px;
     color: #060a24;
     letter-spacing: 0;
@@ -17,11 +17,7 @@
   }
 
   p {
-    font-family: "IBM Plex Mono";
-    font-size: 14px;
-    color: #060a24;
-    letter-spacing: 0;
-    line-height: 22px;
+    @include estilop;
   }
 
   .img-phone {
@@ -30,21 +26,20 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: $desktop) {
   #donde {
-    padding-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 90px;
 
     .img-phone {
-      max-width: 
-      40%;
+      max-width: 40%;
     }
 
     article {
-      max-width: 90%;
+      max-width: 50%;
 
     }
 
@@ -58,8 +53,10 @@
   }
 }
 
-@media (min-width: 800px){
+@media (min-width: 1024px){
   #donde{
-    padding-top:0;
+    margin-top: 0;
   }
 }
+
+

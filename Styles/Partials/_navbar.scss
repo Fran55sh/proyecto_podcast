@@ -30,7 +30,6 @@ header {
     margin: 10px;
     a {
       text-decoration: none;
-      font-family: "IBM Plex Mono", monospace;
       font-size: 16px;
       color: #ffffff;
       letter-spacing: 0;
@@ -68,7 +67,7 @@ header {
   display: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: $desktop) {
   .fa-bars,
   .fa-times {
     display: none;
@@ -87,7 +86,6 @@ header {
         padding: 0 8px;
 
         a {
-          font-family: "IBM Plex Mono";
           font-size: 16px;
           color: #060a24;
           letter-spacing: 0;

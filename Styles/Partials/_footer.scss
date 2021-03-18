@@ -7,7 +7,6 @@ footer{
     
     h3{
         margin: 10px 0;
-        font-family: 'IBM Plex Mono';
         font-size: 14px;
         color: #060A24;
         letter-spacing: 0;
@@ -25,10 +24,8 @@ footer{
         }
 
         .fab{
-            font-size: 16px;
             color: #000000;
             padding: 0 20px;
-            line-height: 28px; 
             transition: .5s ease; 
         }
     }
@@ -60,7 +57,7 @@ footer{
 }
 
 
-@media (min-width:600px){
+@media (min-width:$desktop){
     footer{
         flex-direction: row;
         justify-content: space-between;

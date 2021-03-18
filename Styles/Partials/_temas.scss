@@ -18,7 +18,7 @@
     }
 
     p{
-        font-family: 'IBM Plex Sans';
+        font-family: $plexsans-b;
         font-size: 24px;
         color: #060A24;
         letter-spacing: 0;
@@ -36,7 +36,7 @@
 }
 //fin temas
 
-@media (min-width:600px){
+@media (min-width:$desktop){
     #temas{
         max-width: 100%;
     
