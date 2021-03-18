@@ -66,8 +66,8 @@ main .presentacion .btn-conoce {
 
 main .presentacion .btn-conoce:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-  -webkit-box-shadow: rgba(0, 110, 255, 0.842) 5px 5px, rgba(46, 130, 240, 0.87) 10px 10px, rgba(46, 211, 240, 0.815) 15px 15px, rgba(0, 232, 240, 0.794) 20px 20px, rgba(0, 240, 184, 0.76) 25px 25px;
-          box-shadow: rgba(0, 110, 255, 0.842) 5px 5px, rgba(46, 130, 240, 0.87) 10px 10px, rgba(46, 211, 240, 0.815) 15px 15px, rgba(0, 232, 240, 0.794) 20px 20px, rgba(0, 240, 184, 0.76) 25px 25px;
+  -webkit-box-shadow: rgba(0, 110, 255, 0.842) 5px 5px, rgba(46, 130, 240, 0.87) 10px 10px, rgba(46, 211, 240, 0.815) 15px 15px, rgba(0, 240, 255, 0.65) 20px 20px, rgba(0, 240, 208, 0.794) 25px 25px;
+          box-shadow: rgba(0, 110, 255, 0.842) 5px 5px, rgba(46, 130, 240, 0.87) 10px 10px, rgba(46, 211, 240, 0.815) 15px 15px, rgba(0, 240, 255, 0.65) 20px 20px, rgba(0, 240, 208, 0.794) 25px 25px;
 }
 
 main .presentacion .txt-btn1 {
@@ -225,7 +225,6 @@ header .logo:hover {
 
 #episodios .podcasts {
   margin: auto;
-  padding-bottom: 50px;
   width: 90%;
 }
 
@@ -304,11 +303,13 @@ header .logo:hover {
 }
 
 #donde .img-phone {
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 
 @media (min-width: 600px) {
   #donde {
+    padding-top: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -316,25 +317,31 @@ header .logo:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   #donde .img-phone {
-    max-width: 30%;
+    max-width: 40%;
   }
   #donde article {
-    padding: 50px;
-    max-width: 30%;
+    max-width: 90%;
   }
   #donde p {
     font-size: 16px;
   }
   #donde h2 {
+    padding-top: 10px;
     font-size: 48px;
+  }
+}
+
+@media (min-width: 800px) {
+  #donde {
+    padding-top: 0;
   }
 }
 
@@ -498,8 +505,8 @@ header .logo:hover {
 
 .escuchar .btn-escucha:hover {
   background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
-  -webkit-box-shadow: rgba(0, 110, 255, 0.842) 5px 5px, rgba(46, 130, 240, 0.87) 10px 10px, rgba(46, 211, 240, 0.815) 15px 15px, rgba(0, 232, 240, 0.794) 20px 20px, rgba(0, 240, 184, 0.76) 25px 25px;
-          box-shadow: rgba(0, 110, 255, 0.842) 5px 5px, rgba(46, 130, 240, 0.87) 10px 10px, rgba(46, 211, 240, 0.815) 15px 15px, rgba(0, 232, 240, 0.794) 20px 20px, rgba(0, 240, 184, 0.76) 25px 25px;
+  -webkit-box-shadow: rgba(0, 110, 255, 0.842) 5px 5px, rgba(46, 130, 240, 0.87) 10px 10px, rgba(46, 211, 240, 0.815) 15px 15px, rgba(0, 240, 255, 0.65) 20px 20px, rgba(0, 240, 208, 0.794) 25px 25px;
+          box-shadow: rgba(0, 110, 255, 0.842) 5px 5px, rgba(46, 130, 240, 0.87) 10px 10px, rgba(46, 211, 240, 0.815) 15px 15px, rgba(0, 240, 255, 0.65) 20px 20px, rgba(0, 240, 208, 0.794) 25px 25px;
 }
 
 @media (min-width: 600px) {
@@ -548,9 +555,41 @@ footer ul li {
 
 footer ul .fab {
   font-size: 16px;
-  color: #060A24;
+  color: #000000;
   padding: 0 20px;
   line-height: 28px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.fa-spotify:hover {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  color: #1DB954;
+}
+
+.fa-instagram:hover {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  color: #fd5949;
+}
+
+.fa-twitter:hover {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  color: #1DA1F2;
+}
+
+.fa-facebook-square:hover {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  color: #4267B2;
+}
+
+.fa-telegram:hover {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  color: #0088cc;
 }
 
 @media (min-width: 600px) {

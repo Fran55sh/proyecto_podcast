@@ -26,12 +26,39 @@ footer{
 
         .fab{
             font-size: 16px;
-            color: #060A24;
+            color: #000000;
             padding: 0 20px;
-            line-height: 28px;  
+            line-height: 28px; 
+            transition: .5s ease; 
         }
     }
 }
+
+.fa-spotify:hover{
+    transform: scale(1.8);
+    color:#1DB954;
+}
+
+.fa-instagram:hover{
+    transform: scale(1.8);
+    color: #fd5949;
+}
+    
+.fa-twitter:hover{
+    transform: scale(1.8);
+    color: #1DA1F2;
+}
+
+.fa-facebook-square:hover{
+    transform: scale(1.8);
+    color: #4267B2;
+}
+
+.fa-telegram:hover{
+    transform: scale(1.8);
+    color: #0088cc;
+}
+
 
 @media (min-width:600px){
     footer{

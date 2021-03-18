@@ -25,32 +25,41 @@
   }
 
   .img-phone {
-    width: 100%;
-    //    margin: auto;
+    width: 80%;
+    margin: auto;
   }
 }
 
 @media (min-width: 600px) {
   #donde {
+    padding-top: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
     .img-phone {
-      max-width: 30%;
+      max-width: 
+      40%;
     }
 
     article {
-      padding: 50px;
-      max-width: 30%;
+      max-width: 90%;
+
     }
 
     p {
       font-size: 16px;
     }
     h2 {
+      padding-top: 10px;
       font-size: 48px;
     }
+  }
+}
+
+@media (min-width: 800px){
+  #donde{
+    padding-top:0;
   }
 }
